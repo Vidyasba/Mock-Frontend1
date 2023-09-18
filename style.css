@@ -1,0 +1,238 @@
+table{
+    border-collapse: collapse;
+   
+} 
+
+tr,td,th{
+    border:2px solid green;
+    padding:15px;
+    /* text-align: center; */
+}
+tbody tr:nth-child(even) {
+    background-color: gray;
+}
+thead{
+    background-color: aqua;
+}
+tr:hover{
+    background-color: saddlebrown;
+}
+td:nth-child(2){
+    width: 100px;
+}
+.table-conatiner{
+height: 400px;
+overflow-y: auto;
+width:400px;
+}
+.navbar {
+    background-color: gray;
+    width: 500px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+   
+}
+
+.navbar li {
+    margin-left: -20px;
+    padding: 10px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    /* transition: background-color 0.3s; */
+   
+}
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 88px;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 10px;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover ,li:hover{
+    background-color: #333;
+}
+
+.hovering li:nth-child(even):hover{
+    background-color: aqua;
+}
+.hovering li:nth-child(odd):hover{
+    background-color: red;
+    color: black;
+    font-size: 22px;
+}
+/* .imgforchck{
+    background-image: url(wall.jpg);
+   
+    background-size: 1000px 1000px;
+    background-repeat: no-repeat;
+} */
+.imgforchck{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top:0px;
+    left:250px;
+}
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+.parent{
+    width:1000px;
+}
+.box1{
+    width:250px;
+    height: 250px;
+    background-color: blue;
+    position: relative;
+}
+.box2{
+    width:250px;
+    height: 250px;
+    background-color: red;
+   visibility: hidden;
+}
+.box1:hover ~.box2{
+
+visibility: visible;
+ 
+}
+.div1{
+    width:200px;
+    background-color: goldenrod;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+.div2{
+    position: absolute;
+    top:1105px;
+    width:200px;
+    background-color: black;
+    height: 200px;
+    color: white;
+    z-index: 0;
+}
+.div1:hover ~ .div2{
+    z-index: -1;
+    position: absolute;
+    left:100px;
+    top:1000px;
+}
+.btn:hover + .div2{
+    z-index: 10;
+    position: absolute;
+    left:100px;
+    top:1000px;
+    
+}
+
+ .grid-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);;
+    grid-template-areas: 
+    "a c"
+    "b c ";
+    height: 500px;
+    width:500px;
+}
+
+ .grid-1{
+    grid-area: a;
+    background-image: url("https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+
+}
+.grid-2{
+    grid-area: b;
+    background-image: url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hbGwlMjBiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+
+}
+.grid-3{
+    grid-area: c;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661551348059-fa2e949a511e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGwlMjBiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: contain;
+
+}  
+
+.grid-div-container{
+    display: grid;
+    /* background-color: aqua; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:5px;
+    height: 500px;
+    width:500px;
+}
+ .gridno-1{
+    background-image: url('https://plus.unsplash.com/premium_photo-1661551348059-fa2e949a511e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGwlMjBiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: contain;
+}
+.gridno-2{
+    background-image: url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hbGwlMjBiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
+.gridno-3{
+    background-image: url("https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
+.gridno-4{
+    background-image: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c21hbGwlMjBiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
+.gridno-5{
+    background-image: url("https://images.unsplash.com/photo-1536329583941-14287ec6fc4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
+.gridno-6{
+    background-image: url("https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+} 
+.gridno-7{
+    background-image: url("https://images.unsplash.com/photo-1536329583941-14287ec6fc4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
+.gridno-8{
+    background-image: url("https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+} 
+.gridno-9{
+    background-image: url("https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNtYWxsJTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-size: contain;
+}
